@@ -6,8 +6,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #6dd5ed, #2193b0);
-    color: #333;
+    background: #01352c; /* Linear gradient background color */
+    color: #bad8b6;  /* Default text color */
 }
 
 .project-title {
@@ -18,15 +18,15 @@ body {
 .project-title h1 {
     font-family: 'Pacifico', cursive;
     font-size: 48px;
-    color: #ffffff;
-    text-shadow: 2px 2px #2193b0;
+    color: #f4e5c2; /* Title text color */
+    text-shadow: 2px 2px #2193b0; /* Shadow for the title text */
     margin: 0;
 }
 
 .container {
     width: 90%;
     max-width: 600px;
-    background: #fff;
+    background:   #e1eacd; /* Background color for the main content area */
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -36,7 +36,7 @@ body {
 
 h2 {
     text-align: center;
-    color: #2193b0;
+    color: #01352c ; /* Color for section headings */
 }
 
 form {
@@ -55,8 +55,8 @@ input {
 
 button {
     padding: 10px;
-    background: #2193b0;
-    color: white;
+    background:#01352c ; /* Background color for buttons */
+    color:  #faf8d7; /* Text color for buttons */
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -65,7 +65,7 @@ button {
 }
 
 button:hover {
-    background: #176d8b;
+    background:#2f5241; /* Background color for buttons on hover */
 }
 
 #flashcards-container {
@@ -75,8 +75,8 @@ button:hover {
 }
 
 .flashcard {
-    background: #2193b0;
-    color: white;
+    background: #01352c; /* Background color of flashcards */
+    color:  #faf8d7; /* Text color in flashcards */
     padding: 15px;
     border-radius: 4px;
     cursor: pointer;
@@ -95,7 +95,7 @@ button:hover {
 }
 
 .flashcard:hover {
-    background: #176d8b;
+    background:#2f5241; /* Slightly darker background color on hover */
     transform: scale(1.02);
 }
 
@@ -113,15 +113,43 @@ button:hover {
 
 .flashcard .controls button {
     margin-right: 5px;
-    background: #ff6666;
+    background: #e1eacd; /* Background color of buttons in flashcard controls */
+    color: #01352c ; /* Text color in flashcard control buttons */
     transition: background 0.3s;
 }
 
-.flashcard .controls button:hover {
-    background: #ff3333;
-}
+
 
 #flashcards-counter {
     margin-bottom: 20px;
     font-size: 18px;
+    color: #333; /* Text color for the flashcards counter */
+}
+
+#deck-management {
+    margin-bottom: 20px;
+}
+
+#deck-list {
+    margin-top: 10px;
+}
+
+.deck {
+    background: #f4f4f4; /* Background color for deck items */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.deck:hover {
+    background: #ddd; /* Slightly darker background color for deck items on hover */
+}
+
+#review-mode {
+    margin-top: 20px;
+}
+
+#review-mode button {
+    margin-right: 10px;
 }
