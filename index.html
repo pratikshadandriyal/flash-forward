@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Character encoding for the HTML document -->
     <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
     <title>Flash Forward</title>
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Header section containing the project title -->
     <header class="project-title">
         <h1>Flash Forward</h1>
     </header>
+
+    <!-- Main content container -->
     <div class="container">
+        <!-- Section title for flashcards -->
         <h2>Flashcards</h2>
+        
+        <!-- Form for adding new flashcards -->
         <form id="flashcard-form">
+            <!-- Input for the question on the flashcard -->
             <input type="text" id="question" placeholder="Question" required>
+            <!-- Input for the answer on the flashcard -->
             <input type="text" id="answer" placeholder="Answer" required>
+            <!-- Input for the category of the flashcard -->
+            <input type="text" id="category" placeholder="Category">
+            <!-- Input for tags related to the flashcard, comma-separated -->
+            <input type="text" id="tags" placeholder="Tags (comma separated)">
+            <!-- Submit button to add the flashcard -->
             <button type="submit">Add Flashcard</button>
         </form>
+        
+        <!-- Counter displaying the total number of flashcards -->
         <div id="flashcards-counter">Total Flashcards: 0</div>
+        <!-- Container for displaying the list of flashcards -->
         <div id="flashcards-container"></div>
     </div>
+    
+    <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
 </body>
+
 </html>
